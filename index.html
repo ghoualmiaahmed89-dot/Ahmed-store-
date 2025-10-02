@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Store</title>
+  <link rel="stylesheet" href="ddd.css">
+</head>
+<body>
+  <!-- رأس الموقع -->
+  <header>
+    <h1>Ahmed Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">المنتجات</a></li>
+        <li><a href="#">حول</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li class="cart">
+          🛒 <span id="cart-count">0</span>
+          <div id="cart-dropdown" class="cart-dropdown">
+            <h3>سلة المشتريات</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-empty">السلة فارغة</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- قسم البانر -->
+  <section class="hero">
+    <h2>مرحبا بكم في Ahmed Store</h2>
+    <p>أفضل المنتجات بأحسن الأسعار</p>
+    <button onclick="showMessage()">تسوق الآن</button>
+  </section>
+
+  <!-- قسم المنتجات -->
+  <section class="products">
+    <h2>منتجاتنا</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="منتج 1">
+        <h3>منتج 1</h3>
+        <p>وصف قصير للمنتج.</p>
+        <button onclick="addToCart('منتج 1')">أضف للسلة</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="منتج 2">
+        <h3>منتج 2</h3>
+        <p>وصف قصير للمنتج.</p>
+        <button onclick="addToCart('منتج 2')">أضف للسلة</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="منتج 3">
+        <h3>منتج 3</h3>
+        <p>وصف قصير للمنتج.</p>
+        <button onclick="addToCart('منتج 3')">أضف للسلة</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2025 Ahmed Store - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="aaa.js"></script>
+</body>
+</html>
